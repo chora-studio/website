@@ -6,14 +6,14 @@ import { getDocs } from '@utils'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'chora blog | research',
+  title: 'chora studio | research',
 }
 
-async function getPosts() {
-  const allPosts = getDocs().filter((p) => p.tags.includes('research'))
+async function getResearch() {
+  const allDocs = getDocs().filter((p) => p.tags.includes('research'))
 
-  // sort posts by date
-  return allPosts.sort((a, b) => {
+  // sort docs by date
+  return allDocs.sort((a, b) => {
     if (a.date < b.date) {
       return 1
     } else {
@@ -23,7 +23,7 @@ async function getPosts() {
 }
 
 const ResearchPage = async () => {
-  const posts = await getPosts()
+  const docs = await getResearch()
 
   return (
     <div className={styles.page}>
@@ -33,11 +33,11 @@ const ResearchPage = async () => {
         </div>
       </div>
       <div className={styles.content}>
-        {!posts.length ? (
+        {!docs.length ? (
           <p>{'coming soon...'}</p>
         ) : (
           <ul>
-            {posts.map(({ id, date, title, author }) => (
+            {docs.map(({ id, date, title, author }) => (
               <li key={id}>
                 <Link href={`/research/${id}`}>
                   <h4>{date}</h4>

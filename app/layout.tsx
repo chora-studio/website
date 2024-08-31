@@ -28,14 +28,13 @@ const Layout = ({ children }: any) => (
                 target: '',
               },
               {
-                link: '/validator',
-                title: 'validator',
-                target: '',
-              },
-              'divider',
-              {
                 link: '/research',
                 title: 'research',
+                target: '',
+              },
+              {
+                link: '/validator',
+                title: 'validator',
                 target: '',
               },
             ]}
@@ -60,21 +59,16 @@ const Layout = ({ children }: any) => (
                 title: 'solutions',
               },
               {
-                link: 'validator',
-                target: '',
-                title: 'validator',
-              },
-              {
                 link: 'research',
                 target: '',
                 title: 'research',
               },
-              'divider',
               {
-                link: 'https://chora.blog',
-                target: '_blank',
-                title: 'chora blog',
+                link: 'validator',
+                target: '',
+                title: 'validator',
               },
+              'divider',
               {
                 link: 'https://chora.io',
                 target: '_blank',
@@ -105,14 +99,14 @@ const Layout = ({ children }: any) => (
                     title: 'solutions',
                   },
                   {
-                    link: '/validator',
-                    target: '',
-                    title: 'validator',
-                  },
-                  {
                     link: '/research',
                     target: '',
                     title: 'research',
+                  },
+                  {
+                    link: '/validator',
+                    target: '',
+                    title: 'validator',
                   },
                 ],
               },

@@ -2,6 +2,10 @@
   composes: page from 'chora/styles/page.css';
 }
 
+.banner {
+  composes: banner from 'chora/styles/main.css';
+}
+
 .content {
   composes: content-full from 'chora/styles/main.css';
 }

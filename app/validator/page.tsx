@@ -12,9 +12,13 @@ const regenLink =
 const ValidatorPage = () => {
   return (
     <div className={styles.page}>
+      <div className={styles.banner}>
+        <div>
+          <h1 style={{ opacity: '0.75' }}>{'validator'}</h1>
+        </div>
+      </div>
       <div className={styles.content}>
         <div>
-          <h1>{'validator'}</h1>
           <p>
             {'Chora Studio operates Chora Validator on '}
             <a href={regenLink} target="_blank">

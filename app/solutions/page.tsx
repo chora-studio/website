@@ -9,9 +9,13 @@ export const metadata: Metadata = {
 const SolutionsPage = () => {
   return (
     <div className={styles.page}>
+      <div className={styles.banner}>
+        <div>
+          <h1 style={{ opacity: '0.75' }}>{'solutions'}</h1>
+        </div>
+      </div>
       <div className={styles.content}>
         <div>
-          <h1>{'solutions'}</h1>
           <p>
             {
               'Chora Studio provides software research and development as a service with a focus on distributed ledger technology and regenerative finance.'

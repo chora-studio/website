@@ -8,14 +8,6 @@ export const getDocs = () => {
   const fileNames = fs.readdirSync(docsDirectory)
   return fileNames.map((fileName) => {
 
-    console.log("HERE", fileName)
-
-    if (!fileName || fileName.includes('README.md')) {
-      return {
-        id: 'readme',
-        data: {},
-      }
-    }
     // set id and full path
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(docsDirectory, fileName)

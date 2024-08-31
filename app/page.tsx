@@ -48,6 +48,16 @@ const HomePage = () => {
             {'learn more'}
             <ArrowRight />
           </Link>
+          <h2>{'research'}</h2>
+          <p>
+            {
+              'Chora Studio is researching distributed systems, governance frameworks, and tools for decentralized monitoring, reporting, and verification.'
+            }
+          </p>
+          <Link href="/research">
+            {'learn more'}
+            <ArrowRight />
+          </Link>
           <h2>{'validator'}</h2>
           <p>
             {'Chora Studio operates Chora Validator on '}
