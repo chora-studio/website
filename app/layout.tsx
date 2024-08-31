@@ -34,9 +34,9 @@ const Layout = ({ children }: any) => (
               },
               'divider',
               {
-                link: 'https://chora.blog',
-                title: 'blog',
-                target: '_blank',
+                link: '/research',
+                title: 'research',
+                target: '',
               },
             ]}
             showMenuButton={true}
@@ -64,6 +64,11 @@ const Layout = ({ children }: any) => (
                 target: '',
                 title: 'validator',
               },
+              {
+                link: 'research',
+                target: '',
+                title: 'research',
+              },
               'divider',
               {
                 link: 'https://chora.blog',
@@ -90,11 +95,6 @@ const Layout = ({ children }: any) => (
                 title: 'chora studio',
                 items: [
                   {
-                    link: 'https://chora.blog',
-                    target: '_blank',
-                    title: 'blog',
-                  },
-                  {
                     link: '/products',
                     target: '',
                     title: 'products',
@@ -108,6 +108,11 @@ const Layout = ({ children }: any) => (
                     link: '/validator',
                     target: '',
                     title: 'validator',
+                  },
+                  {
+                    link: '/research',
+                    target: '',
+                    title: 'research',
                   },
                 ],
               },

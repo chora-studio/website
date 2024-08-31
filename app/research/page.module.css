@@ -1,0 +1,27 @@
+.page {
+  composes: page from 'chora/styles/page.css';
+}
+
+.banner {
+  composes: banner from 'chora/styles/main.css';
+}
+
+.content {
+  composes: content-full from 'chora/styles/main.css';
+}
+
+.content h2 {
+  margin: 0.5em 0;
+}
+
+.content h3 {
+  color: var(--color-text);
+}
+
+.content h4 {
+  color: var(--color-text);
+}
+
+.content ul {
+  list-style: none inside none;
+}
