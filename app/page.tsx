@@ -41,7 +41,7 @@ const HomePage = () => {
           <h2>{'solutions'}</h2>
           <p>
             {
-              'Chora Studio provides software research and development as a service with a focus on distributed ledger technology and regenerative finance.'
+              'Chora Studio provides software research and development as a service with expertise in blockchain infrastructure and regenerative finance.'
             }
           </p>
           <Link href="/solutions">
@@ -51,7 +51,7 @@ const HomePage = () => {
           <h2>{'research'}</h2>
           <p>
             {
-              'Chora Studio is researching distributed systems, governance frameworks, and tools for decentralized monitoring, reporting, and verification.'
+              'Chora Studio is researching distributed systems, governance frameworks, and decentralized ecological monitoring, reporting, and verification.'
             }
           </p>
           <Link href="/research">

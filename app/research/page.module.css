@@ -8,20 +8,28 @@
 
 .content {
   composes: content-full from 'chora/styles/main.css';
+  min-height: 25vh !important;
+  align-items: end !important;
 }
 
-.content h2 {
+.contentFull {
+  composes: content-full from 'chora/styles/main.css';
+  min-height: 25vh !important;
+  align-items: start !important;
+}
+
+.contentFull h2 {
   margin: 0.5em 0;
 }
 
-.content h3 {
+.contentFull h3 {
   color: var(--color-text);
 }
 
-.content h4 {
+.contentFull h4 {
   color: var(--color-text);
 }
 
-.content ul {
+.contentFull ul {
   list-style: none inside none;
 }

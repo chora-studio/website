@@ -25,6 +25,31 @@ const ProductsPage = () => {
               ' - software for commons governance and ecological regeneration built with distributed ledger technology.'
             }
           </p>
+          <p>
+            {
+              'Chora includes a blockchain application, blockchain modules, an API service, and three web applications: '
+            }
+            <a href="https://chora.io/groups" target="_blank">{'Groups'}</a>
+            {', '}
+            <a href="https://chora.io/registry" target="_blank">{'Registry'}</a>
+            {', and '}
+            <a href="https://chora.io/ledger" target="_blank">{'Ledger'}</a>
+            {'.'}
+          </p>
+          <p>
+            {
+              'Chora also includes demo applications, developer tools, and other software experiments. For more information, see '
+            }
+            <a href="https://docs.chora.io" target="_blank">
+              {'Chora Documentation'}
+            </a>
+            {'.'}
+          </p>
+          <p style={{ margin: '1em', textAlign: 'center' }}>
+            <a href="https://github.com/chora-io" target="_blank">
+              {'chora repositories'}
+            </a>
+          </p>
         </div>
       </div>
     </div>
