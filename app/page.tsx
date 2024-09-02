@@ -51,7 +51,7 @@ const HomePage = () => {
           <h2>{'research'}</h2>
           <p>
             {
-              'Chora Studio is researching distributed systems, governance frameworks, and decentralized ecological monitoring, reporting, and verification.'
+              'Chora Studio is researching distributed systems, governance frameworks, and decentralized monitoring, reporting, and verification.'
             }
           </p>
           <Link href="/research">
