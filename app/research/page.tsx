@@ -33,13 +33,13 @@ const ResearchPage = async () => {
         </div>
       </div>
       <div className={styles.content}>
-          <div>
+        <div>
           <p>
             {
               'Chora Studio is researching distributed systems, governance frameworks, and decentralized monitoring, reporting, and verification.'
             }
           </p>
-              </div>
+        </div>
       </div>
       <div className={styles.contentFull}>
         {!docs.length ? (

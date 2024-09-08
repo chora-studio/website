@@ -7,7 +7,6 @@ const docsDirectory = path.join(process.cwd(), 'research/docs')
 export const getDocs = () => {
   const fileNames = fs.readdirSync(docsDirectory)
   return fileNames.map((fileName) => {
-
     // set id and full path
     const id = fileName.replace(/\.md$/, '')
     const fullPath = path.join(docsDirectory, fileName)

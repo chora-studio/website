@@ -9,3 +9,11 @@
 .content {
   composes: content-full from 'chora/styles/main.css';
 }
+
+.content ul {
+  margin: 1em 1em 2em;
+}
+
+.content li {
+  margin: 1em;
+}

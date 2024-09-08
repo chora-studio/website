@@ -22,12 +22,12 @@ const SolutionsPage = () => {
             }
           </p>
           <p>
-            {
-              'As a single-member company, clients work with '}
+            {'As a single-member company, clients work with '}
             <a href="https://ryanchristo.com/about" target="_blank">
               {'Ryan Christoffersen'}
             </a>
-              {', owner and operator of Chora Studio. For larger software projects, Chora Studio can act as project manager with sufficient resources to hire support.'
+            {
+              ', owner and operator of Chora Studio. For larger software projects, Chora Studio can act as project manager with sufficient resources to hire support.'
             }
           </p>
           <p>
@@ -36,7 +36,7 @@ const SolutionsPage = () => {
             }
           </p>
           <p style={{ margin: '1em', textAlign: 'center' }}>
-              {'contact [at] chora.studio'}
+            {'contact [at] chora.studio'}
           </p>
         </div>
       </div>

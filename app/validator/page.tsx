@@ -59,15 +59,68 @@ const ValidatorPage = () => {
           <h2>{'why choose chora validator?'}</h2>
           <p>
             {
-              'Chora Validator is committed to ensuring the security and integrity of every network that Chora Validator operates on. Chora Validator is operated by a senior software engineer with more than two years of experience building, maintaining, and testing software within the Cosmos ecosystem.'
+              'Chora Validator is committed to ensuring the security and integrity of every network that Chora Validator operates on. Chora Validator is operated by a senior software engineer with more than three years of experience building, maintaining, and testing software within the Cosmos ecosystem.'
             }
           </p>
-          <h3>{'regen'}</h3>
+          <h2>{'chora'}</h2>
+          <p>{'Chora Validator is running a single-node test network.'}</p>
+          <ul>
+            <li>
+              <a href="https://testnet.chora.io/" target="_blank">
+                {'chora node (chora-testnet-1)'}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://ledger.chora.io/chora-testnet-1/validators/choravaloper1394r2mejx4vaqrqkqm63k8m3qdsx6xzjquwy7u/"
+                target="_blank"
+              >
+                {'chora validator (chora-testnet-1)'}
+              </a>
+            </li>
+          </ul>
+          <h2>{'regen'}</h2>
           <p>
             {
               'Chora Validator is running a validator node and a full node with public API endpoints. Chora Validator is also running a testnet validator node on Regen Redwood (the stable test network for Regen). Chora Validator is committed to offsetting energy costs with carbon credits issued on Regen.'
             }
           </p>
+          <ul>
+            <li>
+              <a href="https://regen.chora.io/" target="_blank">
+                {'chora node (regen-1)'}
+              </a>
+            </li>
+            <li>
+              <a href="https://redwood.chora.io/" target="_blank">
+                {'chora node (regen-redwood-1)'}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e/"
+                target="_blank"
+              >
+                {'chora validator (regen-1)'}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://ledger.chora.io/regen-redwood-1/validators/regenvaloper1399y9huuus9phlv2d5fjnznem65nlmsn0qgfrd/"
+                target="_blank"
+              >
+                {'chora validator (regen-redwood-1)'}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://app.regen.network/profiles/regen1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfhzzmydg/portfolio/"
+                target="_blank"
+              >
+                {'chora validator portfolio (regen-1)'}
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
