@@ -32,11 +32,11 @@ const Layout = ({ children }: any) => (
                 title: 'research',
                 target: '',
               },
-              {
-                link: '/validator',
-                title: 'validator',
-                target: '',
-              },
+              // {
+              //   link: '/validator',
+              //   title: 'validator',
+              //   target: '',
+              // },
             ]}
             showMenuButton={true}
             showMobileTitle={true}
@@ -63,27 +63,35 @@ const Layout = ({ children }: any) => (
                 target: '',
                 title: 'research',
               },
-              {
-                link: 'validator',
-                target: '',
-                title: 'validator',
-              },
+              // {
+              //   link: 'validator',
+              //   target: '',
+              //   title: 'validator',
+              // },
               'divider',
               {
                 link: 'https://chora.io',
                 target: '_blank',
                 title: 'chora software',
               },
-              {
-                link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
-                target: '_blank',
-                title: 'chora validator',
-              },
+              // {
+              //   link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
+              //   target: '_blank',
+              //   title: 'chora validator',
+              // },
             ]}
             mobileOnly={true}
           />
           <main>{children}</main>
           <Footer
+            about={{
+              title: 'about',
+              text: (
+                <p>
+                  {'Chora Studio is a software research and development company.'}
+                </p>
+              ),
+            }}
             sections={[
               {
                 title: 'chora studio',
@@ -103,11 +111,11 @@ const Layout = ({ children }: any) => (
                     target: '',
                     title: 'research',
                   },
-                  {
-                    link: '/validator',
-                    target: '',
-                    title: 'validator',
-                  },
+                  // {
+                  //   link: '/validator',
+                  //   target: '',
+                  //   title: 'validator',
+                  // },
                 ],
               },
               {
@@ -130,26 +138,26 @@ const Layout = ({ children }: any) => (
                   },
                 ],
               },
-              {
-                title: 'chora validator',
-                items: [
-                  {
-                    link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
-                    target: '_blank',
-                    title: 'regen',
-                  },
-                  {
-                    link: 'https://ledger.chora.io/regen-redwood-1/validators/regenvaloper1399y9huuus9phlv2d5fjnznem65nlmsn0qgfrd',
-                    target: '_blank',
-                    title: 'regen-redwood',
-                  },
-                  {
-                    link: 'https://ledger.chora.io/chora-testnet-1/validators/choravaloper1394r2mejx4vaqrqkqm63k8m3qdsx6xzjquwy7u',
-                    target: '_blank',
-                    title: 'chora-testnet',
-                  },
-                ],
-              },
+              // {
+              //   title: 'chora validator',
+              //   items: [
+              //     {
+              //       link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
+              //       target: '_blank',
+              //       title: 'regen',
+              //     },
+              //     {
+              //       link: 'https://ledger.chora.io/regen-redwood-1/validators/regenvaloper1399y9huuus9phlv2d5fjnznem65nlmsn0qgfrd',
+              //       target: '_blank',
+              //       title: 'regen-redwood',
+              //     },
+              //     {
+              //       link: 'https://ledger.chora.io/chora-testnet-1/validators/choravaloper1394r2mejx4vaqrqkqm63k8m3qdsx6xzjquwy7u',
+              //       target: '_blank',
+              //       title: 'chora-testnet',
+              //     },
+              //   ],
+              // },
             ]}
           />
         </MenuContextProvider>

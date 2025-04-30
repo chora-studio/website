@@ -19,6 +19,10 @@ const ValidatorPage = () => {
       </div>
       <div className={styles.content}>
         <div>
+          <p style={{ background: 'red', color: 'white', textAlign: 'center' }}>
+            {'NOTICE: Chora Validator is no longer in operation.'}
+          </p>
+          <br/>
           <p>
             {'Chora Studio operates Chora Validator on '}
             <a href={regenLink} target="_blank">

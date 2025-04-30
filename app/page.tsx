@@ -58,7 +58,7 @@ const HomePage = () => {
             {'learn more'}
             <ArrowRight />
           </Link>
-          <h2>{'validator'}</h2>
+          {/* <h2>{'validator'}</h2>
           <p>
             {'Chora Studio operates Chora Validator on '}
             <a
@@ -74,7 +74,7 @@ const HomePage = () => {
           <Link href="/validator">
             {'learn more'}
             <ArrowRight />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
