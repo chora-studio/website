@@ -21,6 +21,6 @@ git add -A
 git commit -m 'publish'
 
 # push to gh-pages branch
-git push https://github.com/chora-studio/www master:gh-pages -f
+git push https://github.com/chora-studio/website master:gh-pages -f
 
 cd -

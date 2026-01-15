@@ -1,3 +1,3 @@
-# www
+# website
 
 chora studio website
