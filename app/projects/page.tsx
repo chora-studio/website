@@ -3,21 +3,33 @@ import { Metadata } from 'next'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'chora studio | products',
+  title: 'chora studio | projects',
 }
 
-const ProductsPage = () => {
+const ProjectsPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.banner}>
         <div>
-          <h1 style={{ opacity: '0.75' }}>{'products'}</h1>
+          <h1 style={{ opacity: '0.75' }}>{'projects'}</h1>
         </div>
       </div>
       <div className={styles.content}>
         <div>
+          <h2>{'Chora AI'}</h2>
           <p>
-            {'Chora Studio is stewarding '}
+            {
+              'Chora Studio is prototyping a privacy-preserving multi-agent management system and researching specification-driven development practices.'
+            }
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            <a href="https://github.com/chora-ai" target="_blank">
+              {'source code'}
+            </a>
+          </p>
+          <h2>{'Chora IO'}</h2>
+          <p>
+            {'Chora Studio is prototyping '}
             <a href="https://chora.io" target="_blank">
               {'Chora'}
             </a>
@@ -44,16 +56,16 @@ const ProductsPage = () => {
           </p>
           <p>
             {
-              'Chora also includes demo applications, developer tools, and other software experiments. For more information, see '
+              'Chora also includes demo applications, developer tools, and other software projects. For more information, see '
             }
             <a href="https://docs.chora.io" target="_blank">
               {'Chora Documentation'}
             </a>
             {'.'}
           </p>
-          <p style={{ margin: '1em', textAlign: 'center' }}>
+          <p style={{ textAlign: 'center' }}>
             <a href="https://github.com/chora-io" target="_blank">
-              {'chora source code'}
+              {'source code'}
             </a>
           </p>
         </div>
@@ -62,4 +74,4 @@ const ProductsPage = () => {
   )
 }
 
-export default ProductsPage
+export default ProjectsPage

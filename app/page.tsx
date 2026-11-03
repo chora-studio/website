@@ -17,44 +17,46 @@ const HomePage = () => {
             {'chora'} <span style={{ opacity: '0.75' }}>{'studio'}</span>
           </h1>
           <p>
-            <i>{'commons governance and ecological regeneration'}</i>
+            <i>{'decentralized protocols and agentic systems'}</i>
           </p>
           <p>{'research and development'}</p>
         </div>
       </div>
       <div className={styles.content}>
         <div>
-          <h2>{'products'}</h2>
+          <h2>{'research'}</h2>
           <p>
-            {'Chora Studio is stewarding '}
-            <Link href="https://chora.io" target="_blank">
-              {'Chora'}
-            </Link>
             {
-              ' - software for commons governance and ecological regeneration built with distributed ledger technology.'
+              'Chora Studio is researching decentalized protocols and agentic systems with a special interest in FOSS and privacy-preserving technologies.'
             }
           </p>
-          <Link href="/products">
+          <Link href="/research">
             {'learn more'}
             <ArrowRight />
           </Link>
           <h2>{'solutions'}</h2>
           <p>
             {
-              'Chora Studio provides software research and development as a service with expertise in blockchain infrastructure and regenerative finance.'
+              'Chora Studio provides software research and development as a service with expertise in decentralized protocols and agentic systems.'
             }
           </p>
           <Link href="/solutions">
             {'learn more'}
             <ArrowRight />
           </Link>
-          <h2>{'research'}</h2>
+          <h2>{'projects'}</h2>
           <p>
-            {
-              'Chora Studio is researching distributed systems, governance frameworks, and decentralized monitoring, reporting, and verification.'
-            }
+            {'Chora Studio is prototyping software under two project names: '}
+            <Link href="https://chora.io" target="_blank">
+              {'Chora IO'}
+            </Link>
+            {' for decentralized protocols and '}
+            <Link href="https://chora.ai" target="_blank">
+              {'Chora AI'}
+            </Link>
+            {' for agentic systems.'}
           </p>
-          <Link href="/research">
+          <Link href="/projects">
             {'learn more'}
             <ArrowRight />
           </Link>

@@ -18,8 +18,8 @@ const Layout = ({ children }: any) => (
             }}
             items={[
               {
-                link: '/products',
-                title: 'products',
+                link: '/research',
+                title: 'research',
                 target: '',
               },
               {
@@ -28,8 +28,8 @@ const Layout = ({ children }: any) => (
                 target: '',
               },
               {
-                link: '/research',
-                title: 'research',
+                link: '/projects',
+                title: 'projects',
                 target: '',
               },
               // {
@@ -49,9 +49,9 @@ const Layout = ({ children }: any) => (
                 title: 'home',
               },
               {
-                link: 'products',
+                link: 'research',
                 target: '',
-                title: 'products',
+                title: 'research',
               },
               {
                 link: 'solutions',
@@ -59,21 +59,21 @@ const Layout = ({ children }: any) => (
                 title: 'solutions',
               },
               {
-                link: 'research',
+                link: 'projects',
                 target: '',
-                title: 'research',
+                title: 'projects',
               },
               // {
               //   link: 'validator',
               //   target: '',
               //   title: 'validator',
               // },
-              'divider',
-              {
-                link: 'https://chora.io',
-                target: '_blank',
-                title: 'chora software',
-              },
+              // 'divider',
+              // {
+              //   link: 'https://chora.io',
+              //   target: '_blank',
+              //   title: 'chora software',
+              // },
               // {
               //   link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
               //   target: '_blank',
@@ -88,7 +88,9 @@ const Layout = ({ children }: any) => (
               title: 'about',
               text: (
                 <p>
-                  {'Chora Studio is a software research and development company.'}
+                  {
+                    'Chora Studio is a software research and development company.'
+                  }
                 </p>
               ),
             }}
@@ -97,9 +99,9 @@ const Layout = ({ children }: any) => (
                 title: 'chora studio',
                 items: [
                   {
-                    link: '/products',
+                    link: '/research',
                     target: '',
-                    title: 'products',
+                    title: 'research',
                   },
                   {
                     link: '/solutions',
@@ -107,9 +109,9 @@ const Layout = ({ children }: any) => (
                     title: 'solutions',
                   },
                   {
-                    link: '/research',
+                    link: '/projects',
                     target: '',
-                    title: 'research',
+                    title: 'projects',
                   },
                   // {
                   //   link: '/validator',
@@ -119,7 +121,7 @@ const Layout = ({ children }: any) => (
                 ],
               },
               {
-                title: 'chora software',
+                title: 'chora io',
                 items: [
                   {
                     link: 'https://chora.io',
@@ -133,6 +135,16 @@ const Layout = ({ children }: any) => (
                   },
                   {
                     link: 'https://github.com/chora-io',
+                    target: '_blank',
+                    title: 'repositories',
+                  },
+                ],
+              },
+              {
+                title: 'chora ai',
+                items: [
+                  {
+                    link: 'https://github.com/chora-ai',
                     target: '_blank',
                     title: 'repositories',
                   },

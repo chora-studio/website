@@ -18,12 +18,12 @@ const SolutionsPage = () => {
         <div>
           <p>
             {
-              'Chora Studio provides software research and development as a service with expertise in blockchain infrastructure and regenerative finance.'
+              'Chora Studio provides software research and development as a service with expertise in decentralized protocols and agentic systems.'
             }
           </p>
           <p>
             {'As a single-member company, clients work with '}
-            <a href="https://ryanchristo.com/about" target="_blank">
+            <a href="https://ryanchristo.com" target="_blank">
               {'Ryan Christoffersen'}
             </a>
             {
@@ -32,7 +32,7 @@ const SolutionsPage = () => {
           </p>
           <p>
             {
-              'If your company is interested in working with Chora Studio, please reach out with more information about your company and your project.'
+              'If your organization is interested in working with Chora Studio, please reach out with information about your organization and your project.'
             }
           </p>
           <p style={{ margin: '1em', textAlign: 'center' }}>

@@ -36,7 +36,7 @@ const ResearchPage = async () => {
         <div>
           <p>
             {
-              'Chora Studio is researching distributed systems, governance frameworks, and decentralized monitoring, reporting, and verification.'
+              'Chora Studio is researching decentalized protocols and agentic systems with a special interest in FOSS and privacy-preserving technologies.'
             }
           </p>
         </div>
