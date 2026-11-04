@@ -23,13 +23,13 @@ const Layout = ({ children }: any) => (
                 target: '',
               },
               {
-                link: '/solutions',
-                title: 'solutions',
+                link: '/projects',
+                title: 'projects',
                 target: '',
               },
               {
-                link: '/projects',
-                title: 'projects',
+                link: '/services',
+                title: 'services',
                 target: '',
               },
               // {
@@ -54,25 +54,19 @@ const Layout = ({ children }: any) => (
                 title: 'research',
               },
               {
-                link: 'solutions',
-                target: '',
-                title: 'solutions',
-              },
-              {
                 link: 'projects',
                 target: '',
                 title: 'projects',
+              },
+              {
+                link: 'services',
+                target: '',
+                title: 'services',
               },
               // {
               //   link: 'validator',
               //   target: '',
               //   title: 'validator',
-              // },
-              // 'divider',
-              // {
-              //   link: 'https://chora.io',
-              //   target: '_blank',
-              //   title: 'chora software',
               // },
               // {
               //   link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
@@ -104,50 +98,20 @@ const Layout = ({ children }: any) => (
                     title: 'research',
                   },
                   {
-                    link: '/solutions',
-                    target: '',
-                    title: 'solutions',
-                  },
-                  {
                     link: '/projects',
                     target: '',
                     title: 'projects',
+                  },
+                  {
+                    link: '/services',
+                    target: '',
+                    title: 'services',
                   },
                   // {
                   //   link: '/validator',
                   //   target: '',
                   //   title: 'validator',
                   // },
-                ],
-              },
-              {
-                title: 'chora io',
-                items: [
-                  {
-                    link: 'https://chora.io',
-                    target: '_blank',
-                    title: 'applications',
-                  },
-                  {
-                    link: 'https://docs.chora.io',
-                    target: '_blank',
-                    title: 'documentation',
-                  },
-                  {
-                    link: 'https://github.com/chora-io',
-                    target: '_blank',
-                    title: 'repositories',
-                  },
-                ],
-              },
-              {
-                title: 'chora ai',
-                items: [
-                  {
-                    link: 'https://github.com/chora-ai',
-                    target: '_blank',
-                    title: 'repositories',
-                  },
                 ],
               },
               // {

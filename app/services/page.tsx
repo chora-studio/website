@@ -3,15 +3,15 @@ import { Metadata } from 'next'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'chora studio | solutions',
+  title: 'chora studio | services',
 }
 
-const SolutionsPage = () => {
+const ServicesPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.banner}>
         <div>
-          <h1 style={{ opacity: '0.75' }}>{'solutions'}</h1>
+          <h1 style={{ opacity: '0.75' }}>{'services'}</h1>
         </div>
       </div>
       <div className={styles.content}>
@@ -44,4 +44,4 @@ const SolutionsPage = () => {
   )
 }
 
-export default SolutionsPage
+export default ServicesPage
