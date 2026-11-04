@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
+// import Link from 'next/link'
 
-import { getDocs } from '@utils'
+// import { getDocs } from '@utils'
 
 import styles from './page.module.css'
 
@@ -9,21 +9,21 @@ export const metadata: Metadata = {
   title: 'chora studio | research',
 }
 
-async function getResearch() {
-  const allDocs = getDocs().filter((p) => p.tags.includes('research'))
+// async function getResearch() {
+//   const allDocs = getDocs().filter((p) => p.tags.includes('research'))
 
-  // sort docs by date
-  return allDocs.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
-}
+//   // sort docs by date
+//   return allDocs.sort((a, b) => {
+//     if (a.date < b.date) {
+//       return 1
+//     } else {
+//       return -1
+//     }
+//   })
+// }
 
 const ResearchPage = async () => {
-  const docs = await getResearch()
+  // const docs = await getResearch()
 
   return (
     <div className={styles.page}>
@@ -42,9 +42,9 @@ const ResearchPage = async () => {
         </div>
       </div>
       <div className={styles.contentFull}>
-        {!docs.length ? (
-          <p>{'coming soon...'}</p>
-        ) : (
+        {/*{!docs.length ? (*/}
+        <p>{'coming soon...'}</p>
+        {/*) : (
           <ul>
             {docs.map(({ id, date, title, author }) => (
               <li key={id}>
@@ -56,7 +56,7 @@ const ResearchPage = async () => {
               </li>
             ))}
           </ul>
-        )}
+        )}*/}
       </div>
     </div>
   )
