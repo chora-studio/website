@@ -43,7 +43,9 @@ const ResearchPage = async () => {
       </div>
       <div className={styles.contentFull}>
         {/*{!docs.length ? (*/}
-        <p>{'coming soon...'}</p>
+        <p>
+          <i>{'check back soon'}</i>
+        </p>
         {/*) : (
           <ul>
             {docs.map(({ id, date, title, author }) => (

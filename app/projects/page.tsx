@@ -16,17 +16,6 @@ const ProjectsPage = () => {
       </div>
       <div className={styles.content}>
         <div>
-          <h2>{'Chora AI'}</h2>
-          <p>
-            {
-              'Chora Studio is prototyping a privacy-preserving multi-agent management system and researching specification-driven development practices.'
-            }
-          </p>
-          <p style={{ textAlign: 'center' }}>
-            <a href="https://github.com/chora-ai" target="_blank">
-              {'source code'}
-            </a>
-          </p>
           <h2>{'Chora IO'}</h2>
           <p>
             {'Chora Studio is prototyping '}
@@ -65,6 +54,17 @@ const ProjectsPage = () => {
           </p>
           <p style={{ textAlign: 'center' }}>
             <a href="https://github.com/chora-io" target="_blank">
+              {'source code'}
+            </a>
+          </p>
+          <h2>{'Chora AI'}</h2>
+          <p>
+            {
+              'Chora Studio is prototyping a privacy-preserving multi-agent management system and researching specification-driven development practices.'
+            }
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            <a href="https://github.com/chora-ai" target="_blank">
               {'source code'}
             </a>
           </p>
