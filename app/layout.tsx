@@ -23,8 +23,8 @@ const Layout = ({ children }: any) => (
                 target: '',
               },
               {
-                link: '/projects',
-                title: 'projects',
+                link: '/prototypes',
+                title: 'prototypes',
                 target: '',
               },
               {
@@ -54,9 +54,9 @@ const Layout = ({ children }: any) => (
                 title: 'research',
               },
               {
-                link: 'projects',
+                link: 'prototypes',
                 target: '',
-                title: 'projects',
+                title: 'prototypes',
               },
               {
                 link: 'services',
@@ -98,9 +98,9 @@ const Layout = ({ children }: any) => (
                     title: 'research',
                   },
                   {
-                    link: '/projects',
+                    link: '/prototypes',
                     target: '',
-                    title: 'projects',
+                    title: 'prototypes',
                   },
                   {
                     link: '/services',

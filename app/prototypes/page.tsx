@@ -3,22 +3,33 @@ import { Metadata } from 'next'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'chora studio | projects',
+  title: 'chora studio | prototypes',
 }
 
-const ProjectsPage = () => {
+const PrototypesPage = () => {
   return (
     <div className={styles.page}>
       <div className={styles.banner}>
         <div>
-          <h1 style={{ opacity: '0.75' }}>{'projects'}</h1>
+          <h1 style={{ opacity: '0.75' }}>{'prototypes'}</h1>
         </div>
       </div>
       <div className={styles.content}>
         <div>
+          <h2>{'Chora AI'}</h2>
+          <p>
+            {
+              'Chora Studio is building an experimental multi-agent management system and researching specification-driven development practices.'
+            }
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            <a href="https://github.com/chora-ai" target="_blank">
+              {'source code'}
+            </a>
+          </p>
           <h2>{'Chora IO'}</h2>
           <p>
-            {'Chora Studio is prototyping '}
+            {'Chora Studio is stewarding '}
             <a href="https://chora.io" target="_blank">
               {'Chora'}
             </a>
@@ -57,21 +68,10 @@ const ProjectsPage = () => {
               {'source code'}
             </a>
           </p>
-          <h2>{'Chora AI'}</h2>
-          <p>
-            {
-              'Chora Studio is prototyping a privacy-preserving multi-agent management system and researching specification-driven development practices.'
-            }
-          </p>
-          <p style={{ textAlign: 'center' }}>
-            <a href="https://github.com/chora-ai" target="_blank">
-              {'source code'}
-            </a>
-          </p>
         </div>
       </div>
     </div>
   )
 }
 
-export default ProjectsPage
+export default PrototypesPage

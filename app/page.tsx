@@ -27,30 +27,20 @@ const HomePage = () => {
           <h2>{'research'}</h2>
           <p>
             {
-              'Chora Studio is researching decentalized protocols and agentic systems with a special interest in FOSS and privacy-preserving technologies.'
+              'Chora Studio is researching decentralized protocols and agentic systems with a special interest in privacy-preserving technologies.'
             }
           </p>
           <Link href="/research">
             {'learn more'}
             <ArrowRight />
           </Link>
-          <h2>{'projects'}</h2>
+          <h2>{'prototypes'}</h2>
           <p>
             {
-              'Chora Studio is developing software under two project names: (1) '
-            }
-            <Link href="https://github.com/chora-io" target="_blank">
-              {'Chora IO'}
-            </Link>
-            {' with a focus on decentralized protocols, (2) '}
-            <Link href="https://github.com/chora-ai" target="_blank">
-              {'Chora AI'}
-            </Link>
-            {
-              ' with a focus on agentic systems. The projects are considered prototypes and experimental.'
+              'Chora Studio is developing experimental software with a focus on tools and infrastructure for decentralized protocols and agentic systems.'
             }
           </p>
-          <Link href="/projects">
+          <Link href="/prototypes">
             {'learn more'}
             <ArrowRight />
           </Link>
