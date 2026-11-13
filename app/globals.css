@@ -1,1 +1,11 @@
 @import 'chora/styles/globals.css';
+
+li {
+  line-height: 1.75;
+}
+
+hr {
+  border: 1px solid var(--box-shadow-color);
+  border-bottom-width: 0;
+  box-shadow: 0 0 1px var(--box-shadow-color);
+}

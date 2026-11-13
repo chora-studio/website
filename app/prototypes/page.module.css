@@ -9,3 +9,11 @@
 .content {
   composes: content-full from 'chora/styles/main.css';
 }
+
+.content ul {
+  list-style-position: inside;
+}
+
+.content hr {
+  margin: 5vh 0;
+}
