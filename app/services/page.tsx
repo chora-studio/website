@@ -32,11 +32,16 @@ const ServicesPage = () => {
           </p>
           <p>
             {
-              'If your organization is interested in working with Chora Studio, please reach out with information about your organization and your project.'
+              'If your organization is interested in working with Chora Studio, please reach out with information about the organization and project:'
             }
           </p>
-          <p style={{ margin: '1em', textAlign: 'center' }}>
-            {'contact [at] chora.studio'}
+          <p style={{ textAlign: 'center' }}>{'contact [at] chora.studio'}</p>
+          <p>
+            <i>
+              {
+                'The above email address uses Proton Mail under the hood. If you send an email using Proton Mail, our communication will be end-to-end encrypted.'
+              }
+            </i>
           </p>
         </div>
       </div>
