@@ -29,7 +29,7 @@ const ResearchPage = async () => {
     <div className={styles.page}>
       <div className={styles.banner}>
         <div>
-          <h1 style={{ opacity: '0.75' }}>{'research'}</h1>
+          <h1>{'research'}</h1>
         </div>
       </div>
       <div className={styles.content}>
