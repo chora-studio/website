@@ -9,11 +9,3 @@
 .content {
   composes: content-full from '../../styles/content.css';
 }
-
-.content h2 {
-  margin: 0.5em 0;
-}
-
-.content ul {
-  margin: 0.5em 0 2em 0;
-}

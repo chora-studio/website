@@ -10,17 +10,12 @@
   composes: content-full from '../../styles/content.css';
 }
 
-.content h2 {
-  margin: 1em 0;
-}
-
 .content ul {
   list-style: none inside none;
-  margin: 1em 0;
 }
 
 .content li {
-  margin: 1em 0;
+  margin: 2em 0;
 }
 
 .content p {
