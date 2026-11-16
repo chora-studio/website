@@ -1,26 +1,11 @@
 .page {
-  composes: page from 'chora/styles/page.css';
+  composes: page from '../../styles/page.css';
 }
 
 .banner {
-  composes: banner from 'chora/styles/main.css';
+  composes: banner from '../../styles/banner.css';
 }
 
 .content {
-  composes: content-full from 'chora/styles/main.css';
-}
-
-.content ul {
-  list-style-position: inside;
-}
-
-.content li {
-  line-height: 1.75;
-}
-
-.content hr {
-  border: 1px solid var(--box-shadow-color);
-  border-bottom-width: 0;
-  box-shadow: 0 0 1px var(--box-shadow-color);
-  margin: 5vh 0;
+  composes: content-full from '../../styles/content.css';
 }

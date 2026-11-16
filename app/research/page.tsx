@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-// import Link from 'next/link'
+import Link from 'next/link'
 
-// import { getDocs } from '@utils'
+import { getArtifacts } from '@utils'
 
 import styles from './page.module.css'
 
@@ -9,21 +9,15 @@ export const metadata: Metadata = {
   title: 'chora studio | research',
 }
 
-// async function getResearch() {
-//   const allDocs = getDocs().filter((p) => p.tags.includes('research'))
-
-//   // sort docs by date
-//   return allDocs.sort((a, b) => {
-//     if (a.date < b.date) {
-//       return 1
-//     } else {
-//       return -1
-//     }
-//   })
-// }
+async function getResearch() {
+  return [
+    { group: 'about', items: getArtifacts('about') },
+    { group: 'concepts', items: getArtifacts('concepts') },
+  ]
+}
 
 const ResearchPage = async () => {
-  // const docs = await getResearch()
+  const artifacts = await getResearch()
 
   return (
     <div className={styles.page}>
@@ -39,26 +33,37 @@ const ResearchPage = async () => {
               'Chora Studio is researching decentralized protocols and agentic systems with a special interest in privacy-preserving technologies.'
             }
           </p>
+          {!artifacts.length ? (
+            <p>
+              <i>{'failed to load artifacts'}</i>
+            </p>
+          ) : (
+            <div>
+              {artifacts.map(({ group, items }) => (
+                <div key={group} style={{ margin: '1em 0' }}>
+                  <h2>{group}</h2>
+                  <ul>
+                    {items.map(
+                      ({ id, title, description, created, updated }) => (
+                        <li key={id}>
+                          <Link href={`/research/` + group + '/' + id}>
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                            <p>
+                              <i>{`created: ${created.toDateString()}`}</i>
+                              {' | '}
+                              <i>{`updated: ${updated.toDateString()}`}</i>
+                            </p>
+                          </Link>
+                        </li>
+                      ),
+                    )}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
-      <div className={styles.contentFull}>
-        {/*{!docs.length ? (*/}
-        <p>
-          <i>{'check back soon'}</i>
-        </p>
-        {/*) : (
-          <ul>
-            {docs.map(({ id, date, title, author }) => (
-              <li key={id}>
-                <Link href={`/research/${id}`}>
-                  <h4>{date}</h4>
-                  <h2>{title}</h2>
-                  <h3>{`by ${author}`}</h3>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}*/}
       </div>
     </div>
   )

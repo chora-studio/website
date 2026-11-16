@@ -1,0 +1,86 @@
+/* banner */
+
+.banner {
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  min-height: 10vh;
+  padding: 2em 0;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .banner {
+    font-size: 1em;
+  }
+}
+
+.banner h1 {
+  font-size: 1.75em;
+  margin-top: 2.5%;
+  padding: 0.15em 0;
+}
+
+@media (max-width: 850px) {
+  .banner h1 {
+    padding: 0.1em 0 !important;
+  }
+}
+
+.banner p {
+  padding: 0.2em 0;
+}
+
+@media (max-width: 850px) {
+  .banner p {
+    padding: 0.15em 0 !important;
+  }
+}
+
+.banner p > i {
+  color: var(--color-theme);
+}
+
+/* banner-full */
+
+.banner-full {
+  composes: banner;
+  min-height: calc(100vh - var(--header-height));
+  padding: 0;
+}
+
+.banner-full > div {
+  margin-bottom: calc(1% + var(--header-height));
+}
+
+/* banner-document */
+
+.banner-document {
+  composes: banner;
+  font-size: 1em;
+}
+
+.banner-document h1 {
+  color: var(--color-theme);
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+@media (max-width: 850px) {
+  .banner-document h1 {
+    font-size: 1.25em;
+  }
+}
+
+.banner-document h2,
+.banner-document h3 {
+  color: var(--color-text);
+  font-size: 1em;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.banner-document h3 {
+  margin-top: 1em;
+}

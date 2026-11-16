@@ -2,14 +2,19 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const docsDirectory = path.join(process.cwd(), 'research/docs')
+const root = path.join(process.cwd(), 'research')
 
-export const getDocs = () => {
-  const fileNames = fs.readdirSync(docsDirectory)
-  return fileNames.map((fileName) => {
-    // set id and full path
+export const getArtifacts = (dir: string) => {
+  const fileNames = fs.readdirSync(root + '/' + dir)
+
+  const filtered = fileNames.filter((fileName) => fileName.includes(`.md`))
+
+  return filtered.map((fileName) => {
+    // set id
     const id = fileName.replace(/\.md$/, '')
-    const fullPath = path.join(docsDirectory, fileName)
+
+    // set full path
+    const fullPath = path.join(root, dir, fileName)
 
     // read file contents
     const fileContents = fs.readFileSync(fullPath, 'utf8')

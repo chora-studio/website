@@ -4,10 +4,10 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const docsDirectory = path.join(process.cwd(), 'research/docs')
+const root = path.join(process.cwd(), 'research')
 
-export async function getDoc(id: string) {
-  const fullPath = path.join(docsDirectory, `${id}.md`)
+export async function getArtifact(dir: string, id: string) {
+  const fullPath = path.join(root, dir, `${id}.md`)
 
   // read file contents
   const fileContents = fs.readFileSync(fullPath, 'utf8')

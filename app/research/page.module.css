@@ -1,35 +1,29 @@
 .page {
-  composes: page from 'chora/styles/page.css';
+  composes: page from '../../styles/page.css';
 }
 
 .banner {
-  composes: banner from 'chora/styles/main.css';
+  composes: banner from '../../styles/banner.css';
 }
 
 .content {
-  composes: content-full from 'chora/styles/main.css';
-  min-height: 25vh !important;
-  align-items: end !important;
+  composes: content-full from '../../styles/content.css';
 }
 
-.contentFull {
-  composes: content-full from 'chora/styles/main.css';
-  min-height: 25vh !important;
-  align-items: start !important;
+.content h2 {
+  margin: 1em 0;
 }
 
-.contentFull h2 {
-  margin: 0.5em 0;
-}
-
-.contentFull h3 {
-  color: var(--color-text);
-}
-
-.contentFull h4 {
-  color: var(--color-text);
-}
-
-.contentFull ul {
+.content ul {
   list-style: none inside none;
+  margin: 1em 0;
+}
+
+.content li {
+  margin: 1em 0;
+}
+
+.content p {
+  color: var(--color-text);
+  font-weight: 300;
 }

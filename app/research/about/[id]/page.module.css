@@ -1,0 +1,11 @@
+.page {
+  composes: page from '../../../../styles/page.css';
+}
+
+.banner {
+  composes: banner-document from '../../../../styles/banner.css';
+}
+
+.content {
+  composes: content-full from '../../../../styles/content.css';
+}

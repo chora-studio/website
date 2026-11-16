@@ -86,7 +86,7 @@ const ValidatorPage = () => {
           <h2>{'regen'}</h2>
           <p>
             {
-              'Chora Validator is running a validator node and a full node with public API endpoints. Chora Validator is also running a testnet validator node on Regen Redwood (the stable test network for Regen). Chora Validator is committed to offsetting energy costs with carbon credits issued on Regen.'
+              'Chora Validator is running a validator node and a full node with public API endpoints. Chora Validator is also running a testnet validator node on Regen Redwood (the stable test network for Regen).'
             }
           </p>
           <ul>

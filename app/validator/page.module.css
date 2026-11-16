@@ -1,19 +1,19 @@
 .page {
-  composes: page from 'chora/styles/page.css';
+  composes: page from '../../styles/page.css';
 }
 
 .banner {
-  composes: banner from 'chora/styles/main.css';
+  composes: banner from '../../styles/banner.css';
 }
 
 .content {
-  composes: content-full from 'chora/styles/main.css';
+  composes: content-full from '../../styles/content.css';
+}
+
+.content h2 {
+  margin: 0.5em 0;
 }
 
 .content ul {
-  margin: 1em 1em 2em;
-}
-
-.content li {
-  margin: 1em;
+  margin: 0.5em 0 2em 0;
 }

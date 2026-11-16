@@ -1,13 +1,13 @@
 .page {
-  composes: page from 'chora/styles/page.css';
+  composes: page from '../styles/page.css';
 }
 
 .banner {
-  composes: banner-full from 'chora/styles/main.css';
+  composes: banner-full from '../styles/banner.css';
 }
 
 .content {
-  composes: content-full from 'chora/styles/main.css';
+  composes: content-full from '../styles/content.css';
 }
 
 .content > div {
