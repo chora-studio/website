@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
-const root = path.join(process.cwd(), 'research')
+const root = path.join(process.cwd(), 'artifacts')
 
 export const getArtifacts = (dir: string) => {
   const fileNames = fs.readdirSync(root + '/' + dir)

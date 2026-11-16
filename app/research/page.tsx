@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'chora studio | research',
 }
 
-async function getResearch() {
+async function getResearchArtifacts() {
   return [
     { group: 'about', items: getArtifacts('about') },
     { group: 'concepts', items: getArtifacts('concepts') },
@@ -17,8 +17,7 @@ async function getResearch() {
 }
 
 const ResearchPage = async () => {
-  const artifacts = await getResearch()
-
+  const artifacts = await getResearchArtifacts()
   return (
     <div className={styles.page}>
       <div className={styles.banner}>

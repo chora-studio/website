@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const root = path.join(process.cwd(), 'research')
+const root = path.join(process.cwd(), 'artifacts')
 
 export async function getArtifact(dir: string, id: string) {
   const fullPath = path.join(root, dir, `${id}.md`)

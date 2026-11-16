@@ -14,7 +14,6 @@ export const generateStaticParams = () => {
 
 const ArtifactPage = async ({ params }: any) => {
   const artifact = await getArtifact('concepts', params.id)
-
   return (
     <div className={styles.page}>
       <div className={styles.banner}>
