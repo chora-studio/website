@@ -1,0 +1,11 @@
+.footer {
+  composes: footer from '../styles/footer.css';
+}
+
+.title {
+  composes: footer-title from '../styles/footer.css';
+}
+
+.list {
+  composes: footer-list from '../styles/footer.css';
+}

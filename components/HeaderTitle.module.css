@@ -1,0 +1,17 @@
+.title {
+  composes: header-title from '../styles/header.css';
+}
+
+@media (max-width: 850px) {
+  .title {
+    display: none !important;
+  }
+}
+
+.mobileTitle {
+  composes: header-title from '../styles/header.css';
+}
+
+.headerTitleText {
+  composes: header-title-text from '../styles/header.css';
+}

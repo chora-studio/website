@@ -1,4 +1,4 @@
-import { ArrowRight } from 'chora/components/icons'
+import { ArrowRight } from 'components/icons'
 import { Metadata } from 'next'
 import Link from 'next/link'
 

@@ -1,0 +1,33 @@
+.page {
+  composes: page from '../../../../styles/page.css';
+}
+
+.banner {
+  composes: banner-document from '../../../../styles/banner.css';
+}
+
+.content {
+  composes: content-full from '../../../../styles/content.css';
+}
+
+.content h2,
+.content h3,
+.content h4 {
+    margin: 1em 0;
+}
+
+.content h4 {
+    font-weight: 400;
+}
+
+.content p {
+    margin: 1em 0;
+    padding: 0 !important;
+}
+
+.content pre {
+  background-color: rgba(150, 150, 150, 0.1);
+  border-radius: 1em;
+  margin: 1em 0;
+  padding: 1.5em;
+}

@@ -13,6 +13,7 @@ async function getResearchArtifacts() {
   return [
     { group: 'about', items: getArtifacts('about') },
     { group: 'concepts', items: getArtifacts('concepts') },
+    { group: 'tutorials', items: getArtifacts('tutorials') },
   ]
 }
 

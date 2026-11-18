@@ -1,7 +1,7 @@
 'use client'
 
-import { Background, Footer, Header, Sidebar } from 'chora/components'
-import { MenuContextProvider, ThemeContextProvider } from 'chora/contexts'
+import { Background, Footer, Header, Sidebar } from 'components'
+import { MenuContextProvider, ThemeContextProvider } from 'contexts'
 
 import './globals.css'
 

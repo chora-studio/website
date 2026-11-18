@@ -1,0 +1,59 @@
+/* sidebar */
+
+.sidebar {
+  background: var(--background-primary);
+  box-shadow: var(--box-shadow);
+  height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  overflow-y: scroll;
+  position: fixed;
+  scrollbar-width: none; /* hide scrollbar - Firefox */
+  width: var(--sidebar-width);
+  z-index: 1;
+  -ms-overflow-style: none; /* hide scrollbar - Internet Explorer 10+ */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* hide scrollbar - Safari and Chrome */
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar > ul {
+  padding: 1.5em;
+}
+
+@media (max-width: 850px) {
+  .sidebar > ul {
+    padding: 1em;
+  }
+}
+
+.sidebar > ul > li {
+  font-size: 1.2em;
+  padding: 0.75em 1.5em;
+}
+
+.sidebar > ul > ul {
+  margin-left: 1.75em;
+}
+
+.sidebar > ul > ul > li {
+  font-size: 1.1em;
+  padding: 0.65em 0.5em;
+}
+
+/* sidebar-active */
+
+.sidebar-active {
+  font-weight: 500;
+}
+
+/* sidebar-breadcrumb */
+
+.sidebar-breadcrumb a {
+  font-size: 0.85em;
+  margin-left: -0.5em;
+}
