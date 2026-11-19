@@ -20,6 +20,7 @@
     "clean": "rm -rf .next dist node_modules"
   },
   "dependencies": {
+    "feed": "^6.0.0",
     "gray-matter": "^4",
     "next": "^14",
     "react": "^18",

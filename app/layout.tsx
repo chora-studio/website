@@ -32,11 +32,17 @@ const Layout = ({ children }: any) => (
                 title: 'services',
                 target: '',
               },
-              // {
-              //   link: '/validator',
-              //   title: 'validator',
-              //   target: '',
-              // },
+              'divider',
+              {
+                link: 'https://git.chora.studio/explore/repos',
+                title: 'git',
+                target: '_blank',
+              },
+              {
+                link: '/research/feed',
+                title: 'rss',
+                target: '_blank',
+              },
             ]}
             showMenuButton={true}
             showMobileTitle={true}
@@ -63,16 +69,16 @@ const Layout = ({ children }: any) => (
                 target: '',
                 title: 'services',
               },
-              // {
-              //   link: 'validator',
-              //   target: '',
-              //   title: 'validator',
-              // },
-              // {
-              //   link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
-              //   target: '_blank',
-              //   title: 'chora validator',
-              // },
+              {
+                link: 'https://git.chora.studio/explore/repos',
+                title: 'git',
+                target: '_blank',
+              },
+              {
+                link: '/research/feed',
+                title: 'rss',
+                target: '_blank',
+              },
             ]}
             mobileOnly={true}
           />
@@ -107,33 +113,22 @@ const Layout = ({ children }: any) => (
                     target: '',
                     title: 'services',
                   },
-                  // {
-                  //   link: '/validator',
-                  //   target: '',
-                  //   title: 'validator',
-                  // },
                 ],
               },
-              // {
-              //   title: 'chora validator',
-              //   items: [
-              //     {
-              //       link: 'https://www.mintscan.io/regen/validators/regenvaloper1t8p3zdu3h8qzggfmvvvmtdnaj4trcsfh79xp4e',
-              //       target: '_blank',
-              //       title: 'regen',
-              //     },
-              //     {
-              //       link: 'https://ledger.chora.io/regen-redwood-1/validators/regenvaloper1399y9huuus9phlv2d5fjnznem65nlmsn0qgfrd',
-              //       target: '_blank',
-              //       title: 'regen-redwood',
-              //     },
-              //     {
-              //       link: 'https://ledger.chora.io/chora-testnet-1/validators/choravaloper1394r2mejx4vaqrqkqm63k8m3qdsx6xzjquwy7u',
-              //       target: '_blank',
-              //       title: 'chora-testnet',
-              //     },
-              //   ],
-              // },
+              {
+                title: 'more links',
+                items: [
+                  {
+                    link: 'https://git.chora.studio/explore/repos',
+                    title: 'git',
+                    target: '_blank',
+                  },
+                  {
+                    link: '/research/feed',
+                    title: 'rss',
+                    target: '_blank',
+                  },],
+              },
             ]}
           />
         </MenuContextProvider>
