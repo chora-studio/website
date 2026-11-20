@@ -7,6 +7,11 @@ import './globals.css'
 
 const Layout = ({ children }: any) => (
   <html lang="en">
+    <head>
+      <link rel="alternate" type="application/rss+xml" title="rss" href="/feed/rss" />
+      <link rel="alternate" type="application/atom+xml" title="atom" href="/feed/atom" />
+      <link rel="alternate" type="application/feed+json" title="json" href="/feed/json" />
+    </head>
     <body>
       <ThemeContextProvider>
         <MenuContextProvider>
@@ -34,12 +39,7 @@ const Layout = ({ children }: any) => (
               },
               'divider',
               {
-                link: 'https://git.chora.studio/explore/repos',
-                title: 'git',
-                target: '_blank',
-              },
-              {
-                link: '/research/feed',
+                link: '/feed/rss',
                 title: 'rss',
                 target: '_blank',
               },
@@ -70,13 +70,18 @@ const Layout = ({ children }: any) => (
                 title: 'services',
               },
               {
+                link: '/feed/rss',
+                title: 'rss',
+                target: '_blank',
+              },
+              {
                 link: 'https://git.chora.studio/explore/repos',
                 title: 'git',
                 target: '_blank',
               },
               {
-                link: '/research/feed',
-                title: 'rss',
+                link: '/key.asc',
+                title: 'pgp',
                 target: '_blank',
               },
             ]}
@@ -119,15 +124,21 @@ const Layout = ({ children }: any) => (
                 title: 'more links',
                 items: [
                   {
+                    link: '/feed/rss',
+                    title: 'rss',
+                    target: '_blank',
+                  },
+                  {
                     link: 'https://git.chora.studio/explore/repos',
                     title: 'git',
                     target: '_blank',
                   },
                   {
-                    link: '/research/feed',
-                    title: 'rss',
+                    link: '/key.asc',
+                    title: 'pgp',
                     target: '_blank',
-                  },],
+                  },
+                ],
               },
             ]}
           />
