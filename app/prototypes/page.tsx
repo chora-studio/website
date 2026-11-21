@@ -59,6 +59,12 @@ const PrototypesPage = () => {
             }
           </p>
           <p>
+            <b>{'website'}</b>
+          </p>
+          <a href="https://chora.io" target="_blank">
+            {'https://chora.io'}
+          </a>
+          <p>
             <b>{'tech stack'}</b>
           </p>
           <i>{'Rust, Typescript, React, Nostr, IPFS'}</i>
@@ -161,10 +167,6 @@ const PrototypesPage = () => {
             <b>{'tech stack'}</b>
           </p>
           <i>{'Typescript, React, Arduino, RaspberryPi'}</i>
-          <p>
-            <b>{'source code'}</b>
-          </p>
-          <i>{'unavailable'}</i>
           <hr />
           <h2>{'chora (decentralized organizations)'}</h2>
           <p>
@@ -179,10 +181,6 @@ const PrototypesPage = () => {
             <b>{'tech stack'}</b>
           </p>
           <i>{'Solidity, Truffle, Typescript, React, IPFS'}</i>
-          <p>
-            <b>{'source code'}</b>
-          </p>
-          <i>{'unavailable'}</i>
         </div>
       </div>
     </div>

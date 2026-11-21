@@ -7,20 +7,23 @@
 
   outputs = { self, nixpkgs }:
   let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    systems = [ "x86_64-linux" "aarch64-linux" ];
+    forEachSystem = f: nixpkgs.lib.genAttrs systems (system: f pkgsFor.${system});
+    pkgsFor = nixpkgs.lib.genAttrs systems (
+      system: import nixpkgs { inherit system; }
+    );
   in
   {
-    # shell for `nix develop`
-    devShells.${system}.default = pkgs.mkShell {
-      nativeBuildInputs = with pkgs; [
-        bun
-      ];
-    };
+    devShells = forEachSystem (pkgs: {
+      default = pkgs.mkShell {
+        nativeBuildInputs = with pkgs; [
+          bun
+        ];
+      };
+    });
 
-    # packages for `nix build` and `nix run`
-    packages.${system} = {
-
-    };
+    packages = forEachSystem (pkgs: {
+      # default = ...
+    });
   };
 }
